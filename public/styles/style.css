@@ -1,3 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:12px;
+}
+.header_buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 6px;
+}
+.header_buttons button{
+    height: 60%;
+    padding:10px;
+    border-radius: 8px;
+}
+.show{
+    width:90%;
+    height: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap:1px;
+    flex-direction: column;
+    background-color: #1569CB;
+    border-radius: 8px;
+}
+.show a {
+    text-decoration: none;
+    padding:3px;
+    color:black;
+    transition: all 0.5s;
+}
+.show a:hover {
+    background-color: rgb(208, 208, 208);
+}
+.hide {
+    display: none;
+}
+.header_title,.trending_title, .categories_title{
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    border-bottom:inset 3px #1569CB;
+    padding:12px 0;
+    margin:12px;
+}
+header nav {
+    width:250px;
+    background-color: #1569CB;
+    padding:12px;
+    display: flex;
+    margin-right: 5%;
+    border-radius: 4px;
+    border:none;
+
+}
+nav form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+}
+nav form input{
+    width: 90%;
+    border:none;    
+    padding:4px;
+    border-radius: 4px;
+}
+nav form button {
+    border-radius: 8px;
+    border:none;    
+    padding:4px;
+    cursor: pointer;
+}
 body{
+    background-color: #F5F5F5;
+    display: grid;
+    grid-template-rows: 14% 32% 42% 13% 2%;
+    overflow-x:hidden;
+}
+.main_movie{
+    height: 60vh;
+    background-color: antiquewhite;
+    margin-top: 60px;
+}
+.trends_container{
+    width:100%;
+    height:60%;
+    display: flex;
+    gap:12px;
+    flex-direction: column;
+    
+}
+.trends_cards_container{
+    width:95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:12px;
+}
+.trends_cards_container .card{
+    width: 80%;
+    height: 200px;
+    background-color: antiquewhite;  
+}
+.categories{
+    height: 300px;
+}
+.categories_container{
+    margin: 0 auto;
+    display: grid;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: baseline;
+}
+.categorie_card{
+    display: flex;
+    margin: 6px auto;
+   width: 40%;
+   height: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+.categorie_button{
+    width:20px;
+    height: 20px;
+    border:none;
     background-color: brown;
+    border-radius: 8px;
+}
+.btn_1{
+    background-color: brown;
+}
+.btn_2{
+    background-color: #1569CB;
+}
+.btn_3{
+    background-color: orange;
+}
+
+.btn_4{
+    background-color: turquoise;
+}
+.btn_5{
+    background-color:rgb(243, 208, 8);
+}
+.btn_6{
+    background-color:rgb(107, 64, 224);
+}
+.categorie_card p {
+    width: 60%;
+    text-align: start;
+}
+footer{
+    background-color: #1569CB;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+footer p{
+    text-align:center;
+    margin: auto;
 }
